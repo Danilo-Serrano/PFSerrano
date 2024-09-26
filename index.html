@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="CssAct3/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="ImagenesAct3/c57d3bd9b7f89d4de2c19c282eaf3ee3_1024_1024.webp">
+    <!--Tipografía roboto-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Tipografía poppins-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Tipografía Lola-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap" rel="stylesheet">
+
+    <title>UrbanVibes - Tienda online</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Hecho con Boostrap-->
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+            .marquee {
+                width: 100%;               
+                height: 22px;              
+                overflow: hidden;            
+                white-space: nowrap;        
+                background-color: black;    
+                padding: 1px;           
+                margin: 0;      
+                position: sticky;
+                top: 0;
+                z-index: 20;
+            }
+    
+            .marquee span {
+                display: inline-block;
+                color: rgb(219, 218, 218);             
+                padding-left: 25%;          
+                animation: marquee 15s linear infinite; 
+            }
+    
+            @keyframes marquee {
+                0% {
+                    transform: translateX(100%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        </style>
+</head>
+<body>
+    <!-- Texto en movimiento -->
+    <div class="marquee">
+        <span>Descubre nuestras ofertas exclusivas con estilo. ¡Aprovecha hasta un 50% de descuento en nuestra nueva colección! Desliza y viste la moda más reciente al mejor precio. ¡No te lo pierdas!</span>
+    </div>
+    <!--Barra Navegación-->
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <h1 class="tittle"><span>U</span>rban<span>V</span>ibes</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="HtmlsAct3/galeria.html">Galeria</a></li>
+            <li><a href="HtmlsAct3/locales.html">Locales</a></li>
+            <li><a href="HtmlsAct3/contacto.html">Contacto</a></li>
+            <li><a href="HtmlsAct3/carrito.html">Carrito</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+    <!--Imágen Principal-->
+        <img class="main__image" src="ImagenesAct3/imagenmejorada.png">
+    <!--Imágenes secundarias-->
+        <section class="image__container">
+            <div class="container--box box--uno">Zapatillas urbanas</div>
+            <div class="container--box box--dos">Ambiente acogedor y moderno</div>
+            <div class="container--box box--tres">Diseños frescos y originales</div>
+            <div class="container--box box--cuatro"></div>
+        </section>
+    <!--Marcas-->
+        <section class="container__brands">
+                <img class="brands" src="ImagenesAct3/nike.png">
+                <img class="brands" src="ImagenesAct3/adidas.png">
+                <img class="brands" src="ImagenesAct3/north.png">
+                <img class="brands" src="ImagenesAct3/puma.png">
+        </section>
+    <!--Más vendido-->
+    <section class="masvendido">
+            <h4 class="subtittles">Lo Más vendido</h4>
+        <section class="container__masvendido">
+            <img class="masvendido--images" src="ImagenesAct3/p8.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/cuatro.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/imagen10.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/uno.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/tres.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/dos.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/p3.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/uno.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/tres.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/dos.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/p3.jpg">
+            <img class="masvendido--images" src="ImagenesAct3/uno.jpg">
+        </section>
+    </section>
+    <!--Próxima Colección-->
+    <section class="ProximaColeccion">
+    <h4 class="subtittles">Próxima Colección</h4>
+        <section class="container__Proximacoleccion">
+        <div class="Proximacoleccion--flex">
+            <div class="flex--box box--cinco">
+            <h3 class="subtittles Proximacoleccion">Dark Style</h3>
+            <p   class="Proximacoleccion--paragraph">¡Prepárate para la nueva colección de ropa urbana oscura que redefine el estilo callejero con una estética audaz y misteriosa! Inspirada en la cultura underground y los paisajes urbanos, esta línea presenta prendas monocromáticas con toques minimalistas y detalles únicos. Desde chaquetas oversize de cuero sintético hasta camisetas con gráficos abstractos y pantalones de corte relajado, cada pieza está diseñada para brindar comodidad sin perder el toque rebelde.</p>
+            </div>
+            <div class="flex--box box--seis">
+                <div class="proximamente">Próximamente</div>
+            </div>
+        </div>
+        </section>
+    </section>
+    <!--Ver todos los productos-->
+        <section class="vertodoslosproductos">
+            <a class="button__todos-los-productos" href="HtmlsAct3/galeria.html">Ver todos los productos</a>
+        </section>
+            <!--Beneficios-->
+        <section class="advantages__cards">
+            <div class="card">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Envíos</h3>
+                <p>Realizamos envíos nacionales e internacionales con opciones rápidas y seguras.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-backward"></i>
+                <h3>Devoluciones</h3>
+                <p>Aceptamos devoluciones dentro de 30 días, siempre que los productos estén en su estado original.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Medios de Pago</h3>
+                <p>Aceptamos tarjetas de crédito, PayPal y transferencias bancarias, con total seguridad.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+        <section class="footer__newsletter">
+            <h5 class="footer--tittles">Suscribite a nuestro newsletter</h5>
+            <input class="newsletter" type="email" placeholder="Email">
+        </section>
+        <section class="footer__flex">
+            <div class="flex--end">
+        <h4 class="footer--tittles">Navegación</h4>
+        <h6>Inicio</h6>
+        <h6>Contacto</h6>
+        <h6>Carrito</h6>
+        <h6>Ver todos los productos</h6>
+            </div>
+            <div class="flex--end">
+        <h4 class="footer--tittles">Contactanos</h4>
+        <h6><i class="fa-solid fa-phone"></i>549 261 765 4567</h6>
+        <h6><i class="fa-brands fa-instagram"></i>Instragram</h6>
+        <h6><i class="fa-brands fa-facebook"></i>Facebook</h6>
+            </div>
+            <div class="flex--end">
+        <h4 class="footer--tittles">Mas información</h4>
+        <h6>Preguntas Frecuentes</h6>
+        <h6>Terminos y condiciones</h6>
+            </div>
+        </section>
+        </section>
+        <section class="mediosdepago">
+        <h4 class="footer--tittles" >Medios de pago</h4>
+        <img src="ImagenesAct3/Imagen1.jpg">
+        <img src="ImagenesAct3/Imagen4.jpg">
+        <img src="ImagenesAct3/Imagen2.jpg">
+        <img src="ImagenesAct3/Imagen3.jpg">
+        <img src="ImagenesAct3/Imagen5.jpg">
+        </section>
+        <h4>@2024 URBANVIBES</h4>
+    </footer>
+</body>
+</html>
