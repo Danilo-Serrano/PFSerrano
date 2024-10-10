@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CssFinal/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../ImagenesFinal/c57d3bd9b7f89d4de2c19c282eaf3ee3_1024_1024.webp">
+<!--Tipografía roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Tipografía poppins-->
+<title>UrbanVibes - Tienda online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Hecho con Boostrap-->
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+    .marquee {
+        width: 100%;               
+        height: 22px;              
+        overflow: hidden;            
+        white-space: nowrap;        
+        background-color: black;    
+        padding: 1px;           
+        margin: 0;      
+        position: sticky;
+        top: 0;
+        z-index: 20;
+    }
+
+    .marquee span {
+        display: inline-block;
+        color: rgb(219, 218, 218);             
+        padding-left: 25%;          
+        animation: marquee 15s linear infinite; 
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+</head>
+<body>
+<!-- Texto en movimiento -->
+    <div class="marquee">
+    <span>Descubre nuestras ofertas exclusivas con estilo. ¡Aprovecha hasta un 50% de descuento en nuestra nueva colección! Desliza y viste la moda más reciente al mejor precio. ¡No te lo pierdas!</span>
+    </div>
+    <!--Barra Navegación-->
+    <header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <h1 class="tittle"><span>U</span>rban<span>V</span>ibes</h1>
+    <ul>
+        <li><a class="links__main" href="../index.html">Inicio</a></li>
+        <li><a class="links__main" href="galeria.html">Galeria</a></li>
+        <li><a class="links__main" href="locales.html">Locales</a></li>
+        <li><a href="carrito.html"><i class="fa-solid fa-question"></i></a></li>
+        <li><a href="contacto.html"><i class="fa-regular fa-user"></i></a></li>
+    </ul>
+    </nav>
+</header>
+    <main>
+    <section class="preguntas__frecuentes">
+        <h4 class="frecuentes--tittle">Preguntas Frecuentes</h4>
+        <h6 class="frecuentes--subtittle">Sobre el pedido</h6>
+        <details>
+            <summary class="frecuentes--summary">¿Cómo realizo un pedido?</summary>
+            <option class="frecuentes--option"> Selecciona los productos desde la galería, elige talla y cantidad, y completa el formulario de contacto. Te confirmaremos por correo.</option>
+        </details> 
+        <details>
+            <summary class="frecuentes--summary">¿Puedo cambiar o cancelar mi pedido después de realizarlo?</summary>
+            <option class="frecuentes--option"> Sí, dentro de las 24 horas siguientes. Contáctanos para solicitarlo.</option>
+        </details> 
+        <details>
+            <summary class="frecuentes--summary">¿Cómo puedo saber si mi pedido fue confirmado?</summary>
+            <option class="frecuentes--option"> Recibirás un correo de confirmación con los detalles y número de seguimiento.</option>
+        </details> 
+        <h6 class="frecuentes--subtittle">Envíos y Entregas</h6>
+        <details>
+            <summary class="frecuentes--summary">¿Cuánto tiempo tarda en llegar mi pedido?</summary>
+            <option class="frecuentes--option"> De 2 a 5 días hábiles para envíos locales y 3 a 5 días para nacionales.</option>
+        </details> 
+        <details>
+            <summary class="frecuentes--summary">¿Realizan envíos internacionales?</summary>
+            <option class="frecuentes--option"> Sí, contáctanos para cotizar el envío a tu país.</option>
+        </details> 
+        <details>
+            <summary class="frecuentes--summary">¿Cuáles son los costos de envío?</summary>
+            <option class="frecuentes--option"> Varían según destino y peso. Envío gratuito en pedidos mayores a $5.000.</option>
+        </details> 
+        <h6 class="frecuentes--subtittle">Pagos</h6>
+        <details>
+            <summary class="frecuentes--summary">¿Cuáles son los métodos de pago disponibles?</summary>
+            <option class="frecuentes--option"> Aceptamos tarjetas, transferencias bancarias y PayPal.</option>
+        </details> 
+        <details>
+            <summary class="frecuentes--summary">¿Es seguro comprar en su sitio web?</summary>
+            <option class="frecuentes--option"> Sí, utilizamos cifrado SSL para proteger tus datos.</option>
+        </details> 
+    </section>
+        </fieldset>
+            <!--Beneficios-->
+            <section class="benefits__cards">
+                <div class="cards">
+                    <i class="fa-solid fa-truck"></i>
+                    <h3 class="cards--tittles">Envíos</h3>
+                    <p>Realizamos envíos nacionales e internacionales con opciones rápidas y seguras.</p>
+                    </div>
+                <div class="cards">
+                    <i class="fa-solid fa-backward"></i>
+                    <h3 class="cards--tittles">Devoluciones</h3>
+                    <p>Aceptamos devoluciones dentro de 30 días, siempre que los productos estén en su estado original.</p>
+                    </div>
+                <div class="cards">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3 class="cards--tittles">Medios de Pago</h3>
+                    <p>Aceptamos tarjetas de crédito, PayPal y transferencias bancarias, con total seguridad.</p>
+                </div>
+                </section>
+    </main>
+
+    <footer>
+        <section class="footer__flex">
+            <div class="footer__flex1" >
+                <h4 class="footer--tittles">Navegación</h4>
+                <h5>Inicio</h5>
+                <h5>Contacto</h5>
+                <h5>Carrito</h5>
+                <h5>Locales</h5>
+                <h5>Galeria</h5>
+            </div>
+            <div class="footer__flex2" >
+                <h4 class="footer--tittles">Seguinos</h4>
+                <h5><i class="fa-brands fa-facebook"></i>Facebook</h5>
+                <h5><i class="fa-brands fa-instagram"></i>Instagram</h5>
+                <h5><i class="fa-brands fa-whatsapp"></i>Whatsapp</h5>
+            </div>
+            <div class="footer__flex3" >
+                <h4 class="footer--tittles">Newsletter</h4>
+                <input type="email" placeholder="Email" class="footer--placeholder">
+            </div>
+        </section>
+        <section class="mediosdepago">
+        <h4 class="footer--tittles" >Medios de pago</h4>
+        <img src="../ImagenesFinal/Imagen1.jpg">
+        <img src="../ImagenesFinal/Imagen4.jpg">
+        <img src="../ImagenesFinal/Imagen2.jpg">
+        <img src="../ImagenesFinal/Imagen3.jpg">
+        <img src="../ImagenesFinal/Imagen5.jpg">
+        </section>
+        <h4>@2024 URBANVIBES</h4>
+    </footer>
+</body>
+</html>

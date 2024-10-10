@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CssFinal/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../ImagenesFinal/c57d3bd9b7f89d4de2c19c282eaf3ee3_1024_1024.webp">
+<!--Tipografía roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Tipografía poppins-->
+<title>UrbanVibes - Tienda online</title>
+<meta name="description" content="Descripción: Descubre nuestros locales en UrbanVibes. Aquí podrás ver y probar nuestras colecciones. Consulta direcciones y horarios para visitarnos y disfrutar de una experiencia de compra única.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Hecho con Boostrap-->
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+            .marquee {
+                width: 100%;               
+                height: 22px;              
+                overflow: hidden;            
+                white-space: nowrap;        
+                background-color: black;    
+                padding: 1px;           
+                margin: 0;      
+                position: sticky;
+                top: 0;
+                z-index: 20;
+            }
+    
+            .marquee span {
+                display: inline-block;
+                color: rgb(219, 218, 218);             
+                padding-left: 25%;          
+                animation: marquee 15s linear infinite; 
+            }
+    
+            @keyframes marquee {
+                0% {
+                    transform: translateX(100%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        </style>
+</head>
+<body>
+    <!-- Texto en movimiento -->
+    <div class="marquee">
+        <span>Descubre nuestras ofertas exclusivas con estilo. ¡Aprovecha hasta un 50% de descuento en nuestra nueva colección! Desliza y viste la moda más reciente al mejor precio. ¡No te lo pierdas!</span>
+    </div>
+    <!--Barra Navegación-->
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <h1 class="tittle"><span>U</span>rban<span>V</span>ibes</h1>
+        <ul>
+            <li><a class="links__main" href="../index.html">Inicio</a></li>
+            <li><a class="links__main" href="galeria.html">Galeria</a></li>
+            <li><a class="links__main" href="locales.html">Locales</a></li>
+            <li><a href="carrito.html"><i class="fa-solid fa-question"></i></a></li>
+            <li><a href="contacto.html"><i class="fa-regular fa-user"></i></a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="local__div">
+                <!--Mapa-->
+    <section class="locales__boxes">
+        <div class="boxes">
+            <iframe class="boxes--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.802487768983!2d-68.83106706467856!3d-32.8769448868085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09233ec00a19%3A0x30985baca305a5a7!2sAudionauta%20R%C3%A9cords!5e0!3m2!1ses!2sar!4v1725061530999!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="boxes">
+            <h3 class="boxes--tittle">Nuestros Locales</h4>
+            <h4 class="boxes--tittles">Tienda Principal - Ciudad Capital</h4>
+            <h6 class="boxes--subtittles">Dirección: calle Maipú, Centro Capital, 849</h6>
+            <h4 class="boxes--tittles">Horarios de atención:</h5>
+            <h6 class="boxes--subtittles">Lunes a Viernes: 8:00 a.m - 9:00 p.m</h6>
+            <h6 class="boxes--subtittles">Sábados 10:00 a.m - 6:00 p.m</h6>
+            <h6 class="boxes--subtittles">Domingos: Cerrado</h6>
+            <h4 class="boxes--tittles">Teléfono: +54 9 261 123 4567</h5>
+            <h6 class="boxes--subtittles">Contacto WhatsApp: +54 123 456 789</h5>
+            <h6 class="boxes--subtittles">Servicios: Estacionamiento, 5 probadores disponibles, y atención personalizada</h5>
+            <h4 class="boxes--tittles">Proximamente</h4>
+            <h6 class="boxes--subtittles">Estamos trabajando para abrir nuestra nueva sucursal en las Heras! Muy pronto podrás visitarnos en una nueva ubicación y disfrutar de promociones especiales de inaguración</h6>
+        </div>
+    </section>
+</div>
+
+    </main>
+
+    <footer>
+        <section class="footer__flex">
+            <div class="footer__flex1" >
+                <h4 class="footer--tittles">Navegación</h4>
+                <h5>Inicio</h5>
+                <h5>Contacto</h5>
+                <h5>Carrito</h5>
+                <h5>Locales</h5>
+                <h5>Galeria</h5>
+            </div>
+            <div class="footer__flex2" >
+                <h4 class="footer--tittles">Seguinos</h4>
+                <h5><i class="fa-brands fa-facebook"></i>Facebook</h5>
+                <h5><i class="fa-brands fa-instagram"></i>Instagram</h5>
+                <h5><i class="fa-brands fa-whatsapp"></i>Whatsapp</h5>
+            </div>
+            <div class="footer__flex3" >
+                <h4 class="footer--tittles">Newsletter</h4>
+                <input type="email" placeholder="Email" class="footer--placeholder">
+            </div>
+        </section>
+        <section class="mediosdepago">
+        <h4 class="footer--tittles" >Medios de pago</h4>
+        <img src="../ImagenesFinal/Imagen1.jpg">
+        <img src="../ImagenesFinal/Imagen4.jpg">
+        <img src="../ImagenesFinal/Imagen2.jpg">
+        <img src="../ImagenesFinal/Imagen3.jpg">
+        <img src="../ImagenesFinal/Imagen5.jpg">
+        </section>
+        <h4>@2024 URBANVIBES</h4>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+:root{
+--colorPrincipal: rgb(77, 76, 110);
+--colorSecundario: rgb(228, 216, 161);
+--colorTerciario: rgb(61, 56, 61);
+--tipografiaPrincipal: poppins;
+--tipografiaSecundaria: roboto;
+--tipografiaTerciaria: lola;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header, .subtittle__notice{
+    z-index: 100;
+}
+header{
+    position: sticky;
+    top: 21px;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.tittle{
+    font-family: var(--tipografiaPrincipal);
+    font-size: 46px;
+    display: inline-block;
+    margin-left: 5px;
+}
+i{
+    font-size: 30px;
+}
+body{
+    background-color: rgb(219, 216, 212);
+}
+span{
+    color: var(--colorSecundario);
+}
+nav{
+    background-color: var(--colorTerciario);
+    height: 80px;
+    width:100%;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+li a:hover{
+    background-color: var(--colorSecundario);
+    transition: 1s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
